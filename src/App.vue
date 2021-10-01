@@ -1,13 +1,15 @@
 <template>
   <wordcloud />
+  <heatmap />
 </template>
 
 <script>
+import Heatmap from "./components/Heatmap.vue";
 import Wordcloud from "./components/Wordcloud.vue";
 
 export default {
   name: "App",
-  components: { Wordcloud },
+  components: { Wordcloud, Heatmap },
 };
 </script>
 

@@ -66,7 +66,6 @@ export default {
           .attr("text-anchor", "middle")
           .style("font-family", "Impact")
           .attr("transform", function(d) {
-            console.log(d);
             return `translate(${[d.x, d.y]})rotate(${d.rotate})`;
           })
           .text(function(d) {
