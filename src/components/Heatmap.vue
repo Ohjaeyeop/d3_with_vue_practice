@@ -24,7 +24,6 @@ export default {
       d3.csv(
         "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/heatmap_data.csv"
       ).then(function(data) {
-        console.log(data);
         const myGroups = Array.from(new Set(data.map((d) => d.group)));
         const myVars = Array.from(new Set(data.map((d) => d.variable)));
 
